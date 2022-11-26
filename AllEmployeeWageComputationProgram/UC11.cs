@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace AllEmployeeWageComputationProgram
 {
-    //created a class for Company emp wage
-    public class CompanyEmployeeWage
+    public class EmployeeWage
     {
         public string company;
         public int empRatePerHour;
@@ -15,7 +14,7 @@ namespace AllEmployeeWageComputationProgram
         public int MAX_HR_PER_MONTH;
         public int totalEmpWage;
 
-        public CompanyEmployeeWage(string company, int empRatePerHour, int NUM_OF_WORKING_DAYS, int MAX_HR_PER_MONTH)
+        public EmployeeWage(string company, int empRatePerHour, int NUM_OF_WORKING_DAYS, int MAX_HR_PER_MONTH)
         {
             this.company = company;
             this.empRatePerHour = empRatePerHour;
@@ -31,21 +30,21 @@ namespace AllEmployeeWageComputationProgram
             return "Total Emp Wage for company : " + this.company + " is: " + this.totalEmpWage;
         }
     }
-    public class EmpWageBuilderArray
+    public class EmpWageArray
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
 
 
         private int num_of_Company = 0;
-        private CompanyEmployeeWage[] companyEmpWageArray;
-        public EmpWageBuilderArray()
+        private EmployeeWage[] companyEmpWageArray;
+        public EmpWageArray()
         {
-            this.companyEmpWageArray = new CompanyEmployeeWage[7];
+            this.companyEmpWageArray = new EmployeeWage[7];
         }
         public void addCompanyEmpWage(string company, int empRatePerHour, int NUM_OF_WORKING_DAYS, int MAX_HR_PER_MONTH)
         {
-            companyEmpWageArray[this.num_of_Company] = new CompanyEmployeeWage(company, empRatePerHour, NUM_OF_WORKING_DAYS, MAX_HR_PER_MONTH);
+            companyEmpWageArray[this.num_of_Company] = new EmployeeWage(company, empRatePerHour, NUM_OF_WORKING_DAYS, MAX_HR_PER_MONTH);
             num_of_Company++;
         }
         public void computeEmpWage()
@@ -56,7 +55,7 @@ namespace AllEmployeeWageComputationProgram
                 Console.WriteLine(this.companyEmpWageArray[i].toString());
             }
         }
-        private int computeEmpWage(CompanyEmployeeWage companyEmpWage)
+        private int computeEmpWage(EmployeeWage companyEmpWage)
         {
             //variables
             int empHrs = 0;

@@ -10,15 +10,15 @@ namespace AllEmployeeWageComputationProgram
     {
         static void Main(string[] args)
         {
-            //UC10
-            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
-            empWageBuilder.addCompanyEmpWage("TCS", 20, 4, 150);
-            empWageBuilder.addCompanyEmpWage("Amazon", 25, 7, 200);
-            empWageBuilder.addCompanyEmpWage("Infosys", 23, 3, 100);
+            //UC11
+            EmpWageArray empWageBuilder = new EmpWageArray();
+            empWageBuilder.addCompanyEmpWage("TechMahindra", 25, 7, 160);
+            empWageBuilder.addCompanyEmpWage("TripStack", 22, 10, 230);
+            empWageBuilder.addCompanyEmpWage("LG", 23, 3, 100);
             empWageBuilder.addCompanyEmpWage("Wipro", 28, 4, 160);
-            empWageBuilder.addCompanyEmpWage("Hansen", 15, 2, 180);
-            empWageBuilder.addCompanyEmpWage("Reliance", 25, 7, 240);
-            empWageBuilder.addCompanyEmpWage("Apple", 40, 5, 260);
+            empWageBuilder.addCompanyEmpWage("Enzigma", 15, 2, 180);
+            empWageBuilder.addCompanyEmpWage("HCL", 25, 7, 240);
+            empWageBuilder.addCompanyEmpWage("Samsung", 41, 10, 210);
             empWageBuilder.computeEmpWage();
         }
     }
