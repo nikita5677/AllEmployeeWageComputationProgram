@@ -10,10 +10,8 @@ namespace AllEmployeeWageComputationProgram
     {
         static void Main(string[] args)
         {
-            //UC1EmpAttendance.Attendance();
+            //UC2CalculateDailyWages.Calculate();
             //Console.ReadLine();
-
-            
         }
     }
 }
