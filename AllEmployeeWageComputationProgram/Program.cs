@@ -10,9 +10,10 @@ namespace AllEmployeeWageComputationProgram
     {
         static void Main(string[] args)
         {
-            //UC6MaxHRINMonth.Month();
-            //Console.ReadLine();
+           
 
+            //UC7Refactor.ComputeEmpWage();
+            //Console.ReadLine();
         }
     }
 }

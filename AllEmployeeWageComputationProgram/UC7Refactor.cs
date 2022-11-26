@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AllEmployeeWageComputationProgram
 {
-    class UC6MaxHRINMonth
+    class UC7Refactor
     {
         //Constants
         public const int IS_PART_TIME = 1;
@@ -16,7 +15,7 @@ namespace AllEmployeeWageComputationProgram
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int MAX_HR_IN_MONTH = 100;
 
-        public static void Month()
+        public static int ComputeEmpWage()
         {
             //Variables
             int empHr = 0;
@@ -27,8 +26,8 @@ namespace AllEmployeeWageComputationProgram
             while(totalEmpHr <= MAX_HR_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
                 totalWorkingDays++;
-                Random random = new Random();
-                //Computataion
+                Random random =  new Random();
+                //computataion
                 int empCheck = random.Next(0, 3);
                 switch(empCheck)
                 {
@@ -37,7 +36,7 @@ namespace AllEmployeeWageComputationProgram
                         break;
                     case IS_FULL_TIME:
                         empHr = 8;
-                        break;
+                            break;
                     default:
                         empHr = 0;
                         break;
@@ -46,7 +45,8 @@ namespace AllEmployeeWageComputationProgram
                 Console.WriteLine("Day: " + totalWorkingDays + " Employee Hour is: " + empHr);
             }
             totalEmpWage = totalEmpHr * EMP_RATE_PER_HR;
-            Console.WriteLine("Total Employee Wage is: " + totalEmpWage);
+            Console.WriteLine("Total Employee wage is: " + totalEmpWage);
+            return totalEmpWage;
         }
     }
 }
