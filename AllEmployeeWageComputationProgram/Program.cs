@@ -9,9 +9,10 @@ namespace AllEmployeeWageComputationProgram
     class Program
     {
         static void Main(string[] args)
-        {
-            //UC2CalculateDailyWages.Calculate();
+        {   
+            //UC3AddParTimeEmpWage.PartTime();
             //Console.ReadLine();
+            
         }
     }
 }
