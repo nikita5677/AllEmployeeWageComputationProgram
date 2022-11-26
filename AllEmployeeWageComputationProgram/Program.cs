@@ -9,14 +9,17 @@ namespace AllEmployeeWageComputationProgram
     class Program
     {
         static void Main(string[] args)
-        {            
-            //UC9
-            //AbilityToSave Amazon = new AbilityToSave("Amazon", 30, 25, 20);
-            //AbilityToSave Infosys = new AbilityToSave("Infosys", 25, 22, 29);
-            //Amazon.CompanyEmpWage();
-            //Console.WriteLine(Amazon.toString());
-            //Infosys.CompanyEmpWage();
-            //Console.Write(Infosys.toString());            
+        {
+            //UC10
+            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
+            empWageBuilder.addCompanyEmpWage("TCS", 20, 4, 150);
+            empWageBuilder.addCompanyEmpWage("Amazon", 25, 7, 200);
+            empWageBuilder.addCompanyEmpWage("Infosys", 23, 3, 100);
+            empWageBuilder.addCompanyEmpWage("Wipro", 28, 4, 160);
+            empWageBuilder.addCompanyEmpWage("Hansen", 15, 2, 180);
+            empWageBuilder.addCompanyEmpWage("Reliance", 25, 7, 240);
+            empWageBuilder.addCompanyEmpWage("Apple", 40, 5, 260);
+            empWageBuilder.computeEmpWage();
         }
     }
 }
