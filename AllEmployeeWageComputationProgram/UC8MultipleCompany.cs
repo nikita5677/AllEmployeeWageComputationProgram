@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace AllEmployeeWageComputationProgram
 {
-    class UC7Refactor
+    class UC8MultipleCompany
     {
         //Constants
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-        public const int EMP_RATE_PER_HR = 20;
-        public const int NUM_OF_WORKING_DAYS = 20;
-        public const int MAX_HR_IN_MONTH = 100;
 
-        public static int ComputeEmpWage()
+        public static int ComputeEmpWage(string Company, int EMP_RATE_PER_HR, int NUM_OF_WORKING_DAYS, int MAX_HR_IN_MONTH)
         {
             //Variables
             int empHr = 0;
@@ -26,8 +23,8 @@ namespace AllEmployeeWageComputationProgram
             while(totalEmpHr <= MAX_HR_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
                 totalWorkingDays++;
-                Random random =  new Random();
-                //computataion
+                Random random = new Random();
+                //Computation
                 int empCheck = random.Next(0, 3);
                 switch(empCheck)
                 {
@@ -36,7 +33,7 @@ namespace AllEmployeeWageComputationProgram
                         break;
                     case IS_FULL_TIME:
                         empHr = 8;
-                            break;
+                        break;
                     default:
                         empHr = 0;
                         break;
@@ -44,8 +41,8 @@ namespace AllEmployeeWageComputationProgram
                 totalEmpHr = totalEmpHr + empHr;
                 Console.WriteLine("Day: " + totalWorkingDays + " Employee Hour is: " + empHr);
             }
-            totalEmpWage = totalEmpHr * EMP_RATE_PER_HR;
-            Console.WriteLine("Total Employee wage is: " + totalEmpWage);
+            totalEmpWage = empHr * EMP_RATE_PER_HR;
+            Console.WriteLine("Company: " + Company + " Employee Wage is: " + totalEmpWage);
             return totalEmpWage;
         }
     }

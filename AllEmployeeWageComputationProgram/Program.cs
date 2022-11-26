@@ -9,11 +9,10 @@ namespace AllEmployeeWageComputationProgram
     class Program
     {
         static void Main(string[] args)
-        {
-           
-
-            //UC7Refactor.ComputeEmpWage();
-            //Console.ReadLine();
+        {           
+            //UC8MultipleCompany.ComputeEmpWage("Amazon", 30, 25, 20);
+            //UC8MultipleCompany.ComputeEmpWage("Infosys", 25, 26, 24);
+            //Console.ReadLine();            
         }
     }
 }
