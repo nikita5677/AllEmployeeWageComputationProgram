@@ -9,10 +9,14 @@ namespace AllEmployeeWageComputationProgram
     class Program
     {
         static void Main(string[] args)
-        {           
-            //UC8MultipleCompany.ComputeEmpWage("Amazon", 30, 25, 20);
-            //UC8MultipleCompany.ComputeEmpWage("Infosys", 25, 26, 24);
-            //Console.ReadLine();            
+        {            
+            //UC9
+            //AbilityToSave Amazon = new AbilityToSave("Amazon", 30, 25, 20);
+            //AbilityToSave Infosys = new AbilityToSave("Infosys", 25, 22, 29);
+            //Amazon.CompanyEmpWage();
+            //Console.WriteLine(Amazon.toString());
+            //Infosys.CompanyEmpWage();
+            //Console.Write(Infosys.toString());            
         }
     }
 }

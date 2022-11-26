@@ -6,17 +6,28 @@ using System.Threading.Tasks;
 
 namespace AllEmployeeWageComputationProgram
 {
-    class UC8MultipleCompany
+    class AbilityToSave
     {
         //Constants
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
 
-        public static int ComputeEmpWage(string Company, int EMP_RATE_PER_HR, int NUM_OF_WORKING_DAYS, int MAX_HR_IN_MONTH)
+        private string Company;
+        private int EMP_RATE_PER_HR;
+        private int NUM_OF_WORKING_DAYS;
+        private int MAX_HR_IN_MONTH;
+        private int totalEmpWage;
+        public AbilityToSave(string Company, int EMP_RATE_PER_HR, int NUM_OF_WORKING_DAYS, int MAX_HR_IN_MONTH)
         {
-            //Variables
+            this.Company = Company;
+            this.EMP_RATE_PER_HR = EMP_RATE_PER_HR;
+            this.NUM_OF_WORKING_DAYS = NUM_OF_WORKING_DAYS;
+            this.MAX_HR_IN_MONTH = MAX_HR_IN_MONTH; 
+        }
+        public void CompanyEmpWage()
+        {
+            //Variable
             int empHr = 0;
-            int totalEmpWage = 0;
             int totalWorkingDays = 0;
             int totalEmpHr = 0;
 
@@ -24,7 +35,7 @@ namespace AllEmployeeWageComputationProgram
             {
                 totalWorkingDays++;
                 Random random = new Random();
-                //Computation
+                //computation
                 int empCheck = random.Next(0, 3);
                 switch(empCheck)
                 {
@@ -41,9 +52,12 @@ namespace AllEmployeeWageComputationProgram
                 totalEmpHr = totalEmpHr + empHr;
                 Console.WriteLine("Day: " + totalWorkingDays + " Employee Hour is: " + empHr);
             }
-            totalEmpWage = empHr * EMP_RATE_PER_HR;
-            Console.WriteLine("Company: " + Company + " Employee Wage is: " + totalEmpWage);
-            return totalEmpWage;
+            totalEmpWage = totalEmpHr * EMP_RATE_PER_HR;
+            Console.WriteLine("Total Employee wage for Company is: " + Company + " is: " + totalEmpWage);
+        }
+        public string toString()
+        {
+            return " Total Employee wage for Company is:" + this.Company + " is: " + this.totalEmpWage;
         }
     }
 }
