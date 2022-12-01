@@ -14,7 +14,7 @@ namespace AllEmployeeWageComputationProgram
         public const int EMP_RATE_PER_HR = 20;
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int MAX_HR_IN_MONTH = 100;
-
+        //Created a method for ComputeEmpWage
         public static int ComputeEmpWage()
         {
             //Variables
