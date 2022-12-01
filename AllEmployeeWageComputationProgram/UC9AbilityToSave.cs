@@ -30,7 +30,6 @@ namespace AllEmployeeWageComputationProgram
             int empHr = 0;
             int totalWorkingDays = 0;
             int totalEmpHr = 0;
-
             while(totalEmpHr <= MAX_HR_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
                 totalWorkingDays++;
