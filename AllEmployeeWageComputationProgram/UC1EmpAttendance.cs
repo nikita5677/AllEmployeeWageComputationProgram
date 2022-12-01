@@ -8,6 +8,7 @@ namespace AllEmployeeWageComputationProgram
 {
     class UC1EmpAttendance
     {
+        //Created a method For Attendance
         public static void Attendance()
         {
             //Constants
