@@ -11,7 +11,7 @@ namespace AllEmployeeWageComputationProgram
         //Constants
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-
+        //Created a Method for ComputeEmpWage
         public static int ComputeEmpWage(string Company, int EMP_RATE_PER_HR, int NUM_OF_WORKING_DAYS, int MAX_HR_IN_MONTH)
         {
             //Variables
