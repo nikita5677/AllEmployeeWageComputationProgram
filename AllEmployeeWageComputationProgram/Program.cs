@@ -35,7 +35,7 @@ namespace AllEmployeeWageComputationProgram
             //UC8MultipleCompany.ComputeEmpWage("Infosys", 25, 26, 24);
             //Console.ReadLine();
 
-            //UC9
+            ////UC9
             //AbilityToSave Amazon = new AbilityToSave("Amazon", 30, 25, 20);
             //AbilityToSave Infosys = new AbilityToSave("Infosys", 25, 22, 29);
             //Amazon.CompanyEmpWage();
@@ -43,7 +43,7 @@ namespace AllEmployeeWageComputationProgram
             //Infosys.CompanyEmpWage();
             //Console.Write(Infosys.toString());
 
-            //UC10
+            ////UC10
             //EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
             //empWageBuilder.addCompanyEmpWage("TCS", 20, 4, 150);
             //empWageBuilder.addCompanyEmpWage("Amazon", 25, 7, 200);
@@ -54,7 +54,7 @@ namespace AllEmployeeWageComputationProgram
             //empWageBuilder.addCompanyEmpWage("Apple", 40, 5, 260);
             //empWageBuilder.computeEmpWage();
 
-            //UC11
+            ////UC11
             //EmpWageArray empWageBuilder = new EmpWageArray();
             //empWageBuilder.addCompanyEmpWage("TechMahindra", 25, 7, 160);
             //empWageBuilder.addCompanyEmpWage("TripStack", 22, 10, 230);
@@ -66,7 +66,7 @@ namespace AllEmployeeWageComputationProgram
             //empWageBuilder.computeEmpWage();
 
 
-            //UC14
+            ////UC14
             //EmpWageBuilder empWageBuilder = new EmpWageBuilder();
             //empWageBuilder.addCompanyEmpWage("TCS", 22, 3, 15);
             //empWageBuilder.addCompanyEmpWage("Jio", 15, 3, 20);
