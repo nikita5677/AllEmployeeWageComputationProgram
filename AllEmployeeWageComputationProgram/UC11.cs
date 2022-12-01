@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AllEmployeeWageComputationProgram
 {
+    //Created a Class EmployeeWage
     public class EmployeeWage
     {
         public string company;
@@ -13,7 +14,7 @@ namespace AllEmployeeWageComputationProgram
         public int NUM_OF_WORKING_DAYS;
         public int MAX_HR_PER_MONTH;
         public int totalEmpWage;
-
+        //Created a Method for EmployeeWage
         public EmployeeWage(string company, int empRatePerHour, int NUM_OF_WORKING_DAYS, int MAX_HR_PER_MONTH)
         {
             this.company = company;
@@ -21,6 +22,7 @@ namespace AllEmployeeWageComputationProgram
             this.NUM_OF_WORKING_DAYS = NUM_OF_WORKING_DAYS;
             this.MAX_HR_PER_MONTH = MAX_HR_PER_MONTH;
         }
+        //Created a method for setTotalEmpWage
         public void setTotalEmpWage(int totalEmpWage)
         {
             this.totalEmpWage = totalEmpWage;
@@ -30,12 +32,11 @@ namespace AllEmployeeWageComputationProgram
             return "Total Emp Wage for company : " + this.company + " is: " + this.totalEmpWage;
         }
     }
+    //Created a another class for EmpWage Array
     public class EmpWageArray
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-
-
         private int num_of_Company = 0;
         private EmployeeWage[] companyEmpWageArray;
         public EmpWageArray()
@@ -47,6 +48,7 @@ namespace AllEmployeeWageComputationProgram
             companyEmpWageArray[this.num_of_Company] = new EmployeeWage(company, empRatePerHour, NUM_OF_WORKING_DAYS, MAX_HR_PER_MONTH);
             num_of_Company++;
         }
+        //Created a Method for ComputeEmpWage
         public void computeEmpWage()
         {
             for (int i = 0; i < num_of_Company; i++)
