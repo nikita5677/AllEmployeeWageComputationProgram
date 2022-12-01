@@ -8,6 +8,7 @@ namespace AllEmployeeWageComputationProgram
 {
     class UC3AddParTimeEmpWage
     {
+        //Created a Method for PartTime
         public static void PartTime()
         {
             //Constants
