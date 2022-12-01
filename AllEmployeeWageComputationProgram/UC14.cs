@@ -68,7 +68,6 @@ namespace AllEmployeeWageComputationProgram
             int empHrs = 0;
             int totalEmpHrs = 0;
             int totalWorkingDays = 0;
-
             //Computation
             while (totalEmpHrs <= companyEmpWage.Max_Hrs_Per_Month && totalWorkingDays < companyEmpWage.Num_Of_Working_Days)
             {
