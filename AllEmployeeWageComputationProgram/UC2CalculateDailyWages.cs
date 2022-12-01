@@ -8,6 +8,7 @@ namespace AllEmployeeWageComputationProgram
 {
     class UC2CalculateDailyWages
     {
+        //Created a Method for Calculate
         public static void Calculate()
         {
             //Constants
