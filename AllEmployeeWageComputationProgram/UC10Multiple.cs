@@ -10,11 +10,7 @@ namespace AllEmployeeWageComputationProgram
     public class CompanyEmployeeWage
     {
         public string company;
-        public int empRatePerHour;
-        public int NUM_OF_WORKING_DAYS;
-        public int MAX_HR_PER_MONTH;
-        public int totalEmpWage;
-
+        public int empRatePerHour, NUM_OF_WORKING_DAYS, MAX_HR_PER_MONTH, totalEmpWage;
         public CompanyEmployeeWage(string company, int empRatePerHour, int NUM_OF_WORKING_DAYS, int MAX_HR_PER_MONTH)
         {
             this.company = company;
@@ -35,8 +31,6 @@ namespace AllEmployeeWageComputationProgram
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
-
-
         private int num_of_Company = 0;
         private CompanyEmployeeWage[] companyEmpWageArray;
         public EmpWageBuilderArray()
